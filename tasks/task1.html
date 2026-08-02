@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Information Portal</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    margin: 0;
+    background: #f5f3ee;
+    color: #222;
+    line-height: 1.6;
+  }
+  header {
+    background: #1b3a5c;
+    color: #fff;
+    padding: 20px 30px;
+  }
+  header h1 { margin: 0; font-size: 2em; }
+  header p { margin: 4px 0 0; color: #cfe0f0; }
+  nav {
+    background: #14293f;
+    padding: 10px 30px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 0.95em;
+  }
+  nav a:hover { text-decoration: underline; }
+  main { padding: 20px 30px; max-width: 950px; margin: 0 auto; }
+  section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+  }
+  h2 { color: #1b3a5c; border-bottom: 2px solid #1b3a5c; padding-bottom: 5px; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+  }
+  table, th, td {
+    border: 1px solid #999;
+  }
+  th, td {
+    padding: 8px 12px;
+    text-align: left;
+  }
+  th { background: #1b3a5c; color: #fff; }
+  tr:nth-child(even) { background: #f0f0f0; }
+  .logo-img { height: 80px; margin-right: 15px; vertical-align: middle; }
+  .campus-img { max-width: 100%; border-radius: 6px; margin-top: 10px; }
+  form div { margin-bottom: 14px; }
+  label { display: inline-block; width: 130px; font-family: Arial, sans-serif; font-size: 0.95em; }
+  input, select, textarea {
+    font-family: Arial, sans-serif;
+    padding: 6px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+  }
+  input[type="submit"], input[type="reset"] {
+    background: #1b3a5c;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto;
+  }
+  input[type="reset"] { background: #888; }
+  footer {
+    background: #14293f;
+    color: #cfe0f0;
+    text-align: center;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    margin-top: 30px;
+  }
+  fieldset { border: 1px solid #ccc; border-radius: 4px; margin-bottom: 14px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>College Information Portal</h1>
+  <p>Your one-stop resource for academics, admissions, and campus life</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#students">Students</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#registration">Registration</a>
+  <a href="#media">Media</a>
+</nav>
+
+<main>
+
+  <!-- PART A: BASIC HTML -->
+  <section id="about">
+    <article>
+      <h2>About the College</h2>
+      <p>
+        <b>Welcome to Anil Neerukonda Institute Of Technology and  Science</b>, established with a mission to provide
+        <strong>quality technical education</strong> and foster
+        <em>innovation and research</em>. Our campus offers a
+        <u>vibrant learning environment</u> supported by experienced faculty
+        and modern infrastructure.
+      </p>
+      <p>
+        Founded in the year 1998<sup>*</sup>, the college has grown steadily
+        and now offers programs across multiple disciplines.
+        Water's chemical formula, H<sub>2</sub>O, is a small reminder that
+        even subscript has its place on a college page&mdash;used here in our
+        chemistry lab overview.
+      </p>
+
+      <h3> &ndash; Admission Steps</h3>
+      <ol>
+        <li>Fill out the online application form</li>
+        <li>Upload required documents</li>
+        <li>Pay the application fee</li>
+        <li>Attend the entrance interview / counseling</li>
+        <li>Confirm seat allotment</li>
+      </ol>
+
+      <h3> &ndash; Facilities</h3>
+      <ul>
+        <li>Central Library</li>
+        <li>Computer Labs</li>
+        <li>Sports Complex</li>
+        <li>Hostel Accommodation</li>
+        <li>Cafeteria</li>
+      </ul>
+
+      <h3>Useful Links</h3>
+      <p>
+        Visit our <a href="https://anits.org" target="_blank" rel="noopener">College Website</a>
+        or search for more information on <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>.
+      </p>
+    </article>
+  </section>
+
+  <!-- PART B: TABLES AND IMAGES -->
+  <section id="students">
+    <h2>Student Details</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Branch</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>21A01</td>
+          <td>Aarav Sharma</td>
+          <td>CSE</td>
+          <td>aarav.sharma@example.edu</td>
+        </tr>
+        <tr>
+          <td>21A02</td>
+          <td>Priya Nair</td>
+          <td>ECE</td>
+          <td>priya.nair@example.edu</td>
+        </tr>
+        <tr>
+          <td>21A03</td>
+          <td>Rohit Verma</td>
+          <td>Mechanical</td>
+          <td>rohit.verma@example.edu</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <!-- Replace these src paths with your actual logo/campus image files -->
+    <img src="college_logo1.png" alt="College Logo" class="logo-img" size="100%">
+    <p>Our official emblem, representing academic excellence and integrity.</p>
+    <img src="college_logo2.png" alt="Front view of the college main academic building" class="campus-img">
+  </section>
+
+  <!-- PART C: FORMS -->
+  <section id="registration">
+    <h2>Student Registration Form</h2>
+    <form action="#" method="post">
+      <div>
+        <label for="fullname">Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" style="width:auto;">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" style="width:auto;">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other" style="width:auto;">Other</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Hobbies</legend>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading" style="width:auto;">Reading</label>
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        <label for="sports" style="width:auto;">Sports</label>
+        <input type="checkbox" id="music" name="hobbies" value="music">
+        <label for="music" style="width:auto;">Music</label>
+        <input type="checkbox" id="coding" name="hobbies" value="coding">
+        <label for="coding" style="width:auto;">Coding</label>
+      </fieldset>
+
+      <div>
+        <label for="branch">Branch:</label>
+        <select id="branch" name="branch">
+          <option value="cse">Computer Science</option>
+          <option value="ece">Electronics &amp; Communication</option>
+          <option value="mech">Mechanical</option>
+          <option value="civil">Civil</option>
+          <option value="eee">Electrical</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Any additional remarks..."></textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </section>
+
+  <!-- PART D: HTML5 FEATURES -->
+  <section id="media">
+    <h2>Here you can check about our college</h2>
+
+    <h3>Audio</h3>
+    <!-- Replace with an actual audio file path -->
+    <audio controls>
+      <source src="college_anthem.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video</h3>
+    <!-- Replace with an actual video file path -->
+    <video controls width="400">
+      <source src="campus_tour.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    
+  <!-- Semantic footer -->
+<footer>
+  <p>&copy; 2026 College Information Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
