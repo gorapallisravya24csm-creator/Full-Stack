@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title align ="center">My Styled Webpage</title>
+<style>
+  /* ---------- CSS Syntax & Selectors ---------- */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #d7e3ec); /* gradient background */
+    color: #2b2b2b;
+  }
+
+  /* Element selector */
+  header {
+    background: linear-gradient(90deg, #4b6cb7, #182848); /* gradient background */
+    color: #ffffff;
+    padding: 25px 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4); /* text shadow */
+  }
+
+  header h1 {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 2.3em;
+  }
+
+  header p {
+    margin: 6px 0 0;
+    font-family: Georgia, serif;
+    font-size: 1em;
+    color: #d9e2f1;
+  }
+
+  /* Class selector for nav */
+  nav.navbar {
+    background-color: #182848;
+    padding: 12px 40px;
+  }
+
+  nav.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Hover effect for navigation links */
+  nav.navbar a:hover {
+    background-color: #4b6cb7;
+    color: #fff2cc;
+  }
+
+  main {
+    padding: 30px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  section.canvas-section {
+    background: #ffffff;
+    border: 1px solid #ccd6e0;
+    border-radius: 10px; /* rounded corners */
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* box shadow */
+  }
+
+  canvas {
+    border: 2px solid #4b6cb7;
+    border-radius: 8px;
+    background: #fafcff;
+    display: block;
+    margin: 10px auto;
+  }
+
+  h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #182848;
+    border-bottom: 3px solid #4b6cb7;
+    display: inline-block;
+    padding-bottom: 4px;
+  }
+
+  /* Cards layout */
+  .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* ID selector example */
+  #cardsHeading {
+    text-align: center;
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 12px; /* rounded corners */
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 6px 14px rgba(24,40,72,0.18); /* box shadow */
+    border: 1px solid #dde5ee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover effect for cards */
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 22px rgba(24,40,72,0.3);
+  }
+
+  .card h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #4b6cb7;
+    margin-top: 0;
+  }
+
+  .card p {
+    font-family: Georgia, serif;
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  button.card-btn {
+    background: linear-gradient(90deg, #4b6cb7, #182848); /* gradient background */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px; /* rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  /* Hover effect for buttons */
+  button.card-btn:hover {
+    background: linear-gradient(90deg, #182848, #4b6cb7);
+    transform: scale(1.05);
+  }
+
+  footer {
+    background-color: #182848;
+    color: #cfd9ea;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4); /* text shadow */
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1 align="center">My Styled Webpage</h1>
+  <p align="center">Exploring HTML5 Canvas and CSS3 styling</p>
+</header>
+
+<nav  align="center" class="navbar">
+  <a href="#canvas">Canvas</a>
+  <a href="#cards">Content</a>
+  <a href="#footer">Contact</a>
+</nav>
+
+<main>
+
+  <!-- PART A: HTML5 CANVAS -->
+  <section class="canvas-section" id="canvas">
+    <h2>HTML5 Canvas Drawing</h2>
+    <canvas id="myCanvas" width="500" height="300">
+      Your browser does not support the canvas element.
+    </canvas>
+  </section>
+
+  <!-- PART B: CSS3 STYLING - Content Cards -->
+  <section id="cards">
+    <h2 id="cardsHeading">Content Cards</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Card One</h3>
+        <p>This card demonstrates rounded corners, box shadow, and a hover lift effect.</p>
+        <button class="card-btn">Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Card Two</h3>
+        <p>Fonts, padding, and margin work together here to keep the layout balanced.</p>
+        <button class="card-btn">Learn More</button>
+      </div>
+      <div class="card">
+        <h3>Card Three</h3>
+        <p>Hover over this card and the button below to see the transition effects.</p>
+        <button class="card-btn">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="footer">
+  <p>&copy; 2026 My Styled Webpage. Built for the CSS3 &amp; Canvas lab exercise.</p>
+</footer>
+
+<script>
+  const canvas = document.getElementById('myCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // Rectangle
+  ctx.fillStyle = '#4b6cb7';
+  ctx.fillRect(30, 30, 120, 80);
+  ctx.strokeStyle = '#182848';
+  ctx.lineWidth = 2;
+  ctx.strokeRect(30, 30, 120, 80);
+
+  // Circle
+  ctx.beginPath();
+  ctx.arc(280, 70, 50, 0, Math.PI * 2);
+  ctx.fillStyle = '#f4a261';
+  ctx.fill();
+  ctx.strokeStyle = '#182848';
+  ctx.stroke();
+
+  // Line
+  ctx.beginPath();
+  ctx.moveTo(30, 180);
+  ctx.lineTo(470, 180);
+  ctx.strokeStyle = '#2a9d8f';
+  ctx.lineWidth = 4;
+  ctx.stroke();
+
+  // Text: replace "Your Name" with your actual name
+  ctx.font = '28px Trebuchet MS, sans-serif';
+  ctx.fillStyle = '#182848';
+  ctx.fillText('G.SRAVYA', 150, 250);
+</script>
+
+</body>
+</html>
